@@ -1,0 +1,50 @@
+& when (@media-common = true) {
+    .page-title .base {
+        font-family: 'roboto';
+        font-weight: 600;
+    }
+
+    .panel.header {
+        font-family: 'roboto';
+        font-weight: 700;
+        font-size: 14px;
+        p {
+            display: inline;
+        }
+    }
+
+    .header.panel>.header.links>li {
+        font-size: 13px;
+        button {
+            width: 20px;
+        }
+    }
+
+    .header-top-link {
+        float: right;
+        display: flex;
+        .header-top-link-left {
+            padding: 0px 40px 0px 0px;
+            margin-bottom: 0px;
+            li {
+                margin-bottom: 0px;
+                display: inline-block;
+            }
+            &>li:before{
+                margin: 0px 10px;
+                content:'\2022';
+            }
+            &>li:first-child::before {
+                content: none;
+            }
+        }
+        .header-top-link-right {
+            padding-left:40px ;
+            a { 
+                color: white;
+                text-decoration: none;
+                padding: 0 5px;
+            }
+        }     
+    }
+}
